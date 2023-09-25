@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Vision, Mission & Values</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            border-bottom: 1.5px solid #00469A;
+            width: 90vw; /* Set width to 90% of the viewport width */
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #eeeeee;
+        }
+
+        .tab.active {
+            background-color: #fff;
+        }
+
+        .tab-content-container {
+            margin-top: 20px;
+            background-color: #fff;
+            display: none;
+            padding: 10px;
+            width: 90vw; /* Set width to 90% of the viewport width */
+        }
+
+        .tab-content-container.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <div class="tabs">
+            <div class="tab active" onclick="showContent('vision', this)">Our Vision</div>
+            <div class="tab" onclick="showContent('mission', this)">Our Mission</div>
+            <div class="tab" onclick="showContent('values', this)">Our Values</div>
+        </div>
+        <div class="tab-content-container active" id="vision-content">
+            <h2>Our Vision</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Quisque euismod metus eu orci pharetra, a dictum lectus tincidunt. Sed laoreet lacus in felis tempor, a rhoncus neque tempus. Sed vel nisi nec orci pharetra mollis id quis tortor. Nulla facilisi.</p>
+        </div>
+        <div class="tab-content-container" id="mission-content">
+            <h2>Our Mission</h2>
+            <p>Phasellus a facilisis elit, eu dapibus velit. Sed elementum nisi quam, eu facilisis justo rhoncus id. Duis vestibulum, est vel venenatis lacinia, urna eros euismod est, et suscipit mauris dolor et ex. Nulla facilisi.</p>
+        </div>
+        <div class="tab-content-container" id="values-content">
+            <h2>Our Values</h2>
+            <p>Praesent id lectus eu libero dictum lobortis. Quisque commodo arcu non venenatis tincidunt. Nam ac facilisis nisl. Suspendisse eu purus felis. Sed non velit et mi iaculis sagittis a in nunc. Fusce venenatis et mauris vel cursus. Etiam sit amet dolor bibendum, fringilla sapien nec, suscipit purus. Nulla facilisi.</p>
+        </div>
+    </div>
+
+    <script>
+        function showContent(tabName, clickedTab) {
+            const tabContents = document.querySelectorAll('.tab-content-container');
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove('active');
+            }
+
+            const tabs = document.querySelectorAll('.tab');
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+
+            const selectedContent = document.getElementById(tabName + '-content');
+            selectedContent.classList.add('active');
+            clickedTab.classList.add('active');
+        }
+    </script>
+</body>
+</html>
