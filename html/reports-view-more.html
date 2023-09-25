@@ -3,46 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <link rel="stylesheet" href="../css/repports-view-more.css">
-    <!-- <link rel="stylesheet" href="../index.css"> -->
+    <title>www.infogenceglobalresearch.com</title>
+
+     <!-- FONT AWSOME LINKS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- STYLESHEET LINKS -->
+     <!-- <link rel="stylesheet" href="../index.css"> -->
+     <link rel="stylesheet" href="../css/repports-view-more.css">
+ 
+     <!-- SCRIPT FILES LINK -->
+     <script src="../js/mobile-menu-hamburger-icon.js" defer></script>
+     <script src="../js/reports-view-more-tab-changer.js" defer></script>
 </head>
 <body>
 
     
-     <!-- Header Section -->
-     <!-- <div id="parent-of-header-and-hamburger-section">
-        <header class="main-header">        
-            <div class="main-header-logo-box">
-            <img class="final-1-icon" alt="" src="../images/final-1@2x.png" />
-            </div>
-            
-            <ul class="main-header-nav-bar-box hidden" id="menu-list">
-            <li id="home"><a href="../index.html">HOME</a></li>
-            <li id="about-us"><a href="../html/abous-us.html">ABOUT US</a></li>
-            <li id="reports"><a href="../html/reports.html">REPORTS</a></li>
-            <li id="consulting"><a href="./html/abous-us.html">CONSULTING</a></li>
-            <li id="insights"><a href="../html/insights.html">INSIGHTS</a></li>
-            <li id="careers"><a href="../html/careers.html">CAREERS</a></li>
-            <li id="contact-us"><a href="../html/contact-us.html">CONTACT US</a></li>
-            </ul>
-
-            <div id="login-wrapper">
-            <button id="login-btn">LOGIN</button>
-            </div>
-        </header>
-
-        <section class="mobile-menu hidden" onclick="togglemenu()">
-            <img src="../images/menu.png.png" alt="" style="width: 30px;">
-        </section>
-
-     </div> -->
-
-
-
-
    
+
+
+
 
     <section class="reports-card-view-more-section">
         <div class="view-more-card">
@@ -441,118 +421,6 @@
         </div>
     </section>
 
-
-
-
-<!-- 
-    <footer class="main-footer">
-        <div class="foot-col-1">
-            <div class="foot-col-1-row-1-img">
-                <img src="../images/final-1@2x.png" alt="">
-            </div>
-            <p class="foot-col-1-row-1-p">We know how important customer experience is for a business, and therefore, we strive.</p>
-            <div class="foot-col-1-row-1-icons">
-                <img src="../images/Group 28.png" alt="">
-                <img src="../images/Group 29.png" alt="">
-                <img src="../images/Group 30.png" alt="">
-                <img src="../images/Group 84.png" alt="">
-            </div>
-        </div>
-        <div id="parent-foot-col-234">
-            <div class="foot-col-2">
-                <h3>Company</h3>
-                <p>About us</p>
-                <p>Insights</p>
-                <p>Carrer</p>
-            </div>
-            <div class="foot-col-3">
-                <h3>Quick Links</h3>
-                <p>Terms and Condition</p>
-                <p>Privacy Policy</p>
-                <p>GDPR Policy</p>
-                <p>FAQs</p>
-                <p>Sitemap</p>
-            </div>
-            <div class="foot-col-4">
-                <h3>Contact</h3>
-                <div class="foot-col-4-add-part">
-                    <div class="home-icon">
-                        <img src="../images/Vector (2).png" alt="">
-                        <p>420, Nyati Eureka, Near Manpal Hospital, Kharadi, Pune-14, India</p>
-                    </div>
-                    <div class="phone-icon">
-                        <img src="../images/Vector (3).png" alt="">
-                        <p><strong>+91 93564 39799</strong></p>
-                    </div>
-                    <div class="mail-icon">
-                        <img src="../images/Vector (4).png" alt="">
-                        <p id="foot-col-4-add-part-email"><strong>contact@infogenceglobalresearch.com</strong></p>
-                    </div>
-                </div>
-                <div class="foot-col-4-payment-icons">
-                    <span><img src="../images/Group 75.png" alt=""></span>
-                    <span><img src="../images/Vector.png" alt=""></span>
-                    <span><img src="../images/Vector (1).png" alt=""></span>
-                    <span><img src="../images/Group 76.png" alt=""></span>
-                    <span><img src="../images/image 28.png" alt=""></span>
-                </div>
-            </div>
-        </div>
-        
-    </footer>
-    <footer class="footer-bottom">
-        <p>@2023 Infogence Global Research. All rights reserved. </p>
-    </footer> -->
-
-
-
-
-    <script>
-        const defaultContent = document.querySelector('.wrapper-main-content-left-side-box-default-content');
-        const toc = document.querySelector('.wrapper-main-content-left-side-box-table-of-contents');
-        const requestDesc = document.querySelector('.wrapper-main-content-left-side-box-requests-description');
-        const methodology = document.querySelector('.wrapper-main-content-left-side-box-methodology');
-        const rdTab = document.querySelector('#rd-tab');
-        const tocTab = document.querySelector('#toc-tab');
-        const methoTab = document.querySelector('#metho-tab');
-
-
-        tocTab.addEventListener('click', (() => {
-            defaultContent.classList.add('hidden');
-            requestDesc.classList.add('hidden');
-            methodology.classList.add('hidden');
-            toc.classList.remove('hidden');
-        }));
-        rdTab.addEventListener('click', (() => {
-            defaultContent.classList.add('hidden');
-            requestDesc.classList.remove('hidden');
-            methodology.classList.add('hidden');
-            toc.classList.add('hidden');
-        }));
-        methoTab.addEventListener('click', (() => {
-            defaultContent.classList.add('hidden');
-            requestDesc.classList.add('hidden');
-            methodology.classList.remove('hidden');
-            toc.classList.add('hidden');
-        }));
-    </script>
-
-
-    <!-- this script is for mobile menu hamburger icon -->
-    <!-- <script>
-        const menuList = document.getElementById('menu-list');
-        
-        // menuList.style.maxHeight = "0px";
-
-        function togglemenu() {
-            if (menuList.classList.contains('hidden')) {
-                menuList.classList.remove('hidden');
-            }
-            else {
-                menuList.classList.add('hidden');
-            }
-        }
-    </script> -->
 </body>
 </html>
 
