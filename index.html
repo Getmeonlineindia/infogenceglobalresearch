@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infogence</title>
-    <link rel="stylesheet" href="index.css">
+
+    <!-- FONT AWSOME LINKS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- STYLESHEET LINKS -->
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/top-bar.css">
 
 
+    <!-- SCRIPT FILES LINK -->
+    <script src="js/mobile-menu-hamburger-icon.js" defer></script>
     <script src="js/slider.js" defer></script>
 </head>
 <body>
@@ -450,21 +456,6 @@
 
         // Auto change slides every 2 seconds
         setInterval(nextSlide, intervalTime);
-    </script>
-
-    <script>
-        const menuList = document.getElementById('menu-list');
-        
-        // menuList.style.maxHeight = "0px";
-
-        function togglemenu() {
-            if (menuList.classList.contains('hidden')) {
-                menuList.classList.remove('hidden');
-            }
-            else {
-                menuList.classList.add('hidden');
-            }
-        }
     </script>
 </body>
 </html>
