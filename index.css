@@ -540,7 +540,7 @@ a {
 /* ************************************************************** */
 /* STYLING OF CATEGORIES STARTS HERE  */
 .categories-section {
-    /* border: 5px solid red; */
+    border: 5px solid red;
     padding: 20px;
     font-family: inter;
 }
@@ -550,11 +550,15 @@ a {
     padding-bottom: 30px;
 }
 .categories-section-image-section {
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    overflow-x: scroll;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.categories-section-image-section::-webkit-scrollbar {
+    display: none;
 }
 
 .categories-section-image-section a {
