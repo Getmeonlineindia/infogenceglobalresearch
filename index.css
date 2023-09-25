@@ -881,7 +881,7 @@ a {
 
 @media only screen and (max-width: 600px) {
     #foot-col-4-add-part-email {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         font-size: 0.8rem;
     }
 }
