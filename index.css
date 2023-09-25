@@ -13,6 +13,7 @@
 
 a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* STYLING OF MAIN HEADER STARTS HERE */
@@ -699,7 +700,7 @@ a {
     /* border: 2px solid red; */
 }
 .top-market-reports-cards-section .cards {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     text-align: center;
 }
 .top-market-reports-cards-section .cards .image-section img {
@@ -711,6 +712,11 @@ a {
     /* border: 2px solid red; */
     text-align: left;
     padding: 10px;
+    text-decoration: none;
+}
+.top-market-reports-cards-section .know-more-links a {
+    text-decoration: none;
+    color: #000;
 }
 .top-market-reports-cards-section .cards .text-section {
    font-weight: 600;
