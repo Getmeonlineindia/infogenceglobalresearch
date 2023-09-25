@@ -1,0 +1,85 @@
+.product {
+    position: relative;
+    overflow: hidden;
+    /* padding: 20px; */
+    padding-top: 1rem;
+  }
+  
+  .product-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* border: 3px solid red; */
+    padding: 10px;
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-card {
+    flex: 0 0 auto;
+    /* width: 250px; */
+    /* border: 1px solid rgb(223, 213, 213); */
+    padding: 1.5rem 0.75rem;
+    /* width: 300px; */
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 20px; */
+    /* border: 2px solid blue; */
+  }
+  
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 50%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%); */
+    /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%); */
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+  .pre-btn {
+    left: 0rem;
+    /* transform: rotate(180deg); */
+    transform: translateY(-50%);
+  }
+  
+  .nxt-btn {
+    right: 0rem;
+    transform: translateY(-50%);
+  }
+  
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.3;
+  }
+  
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .pre-btn, .nxt-btn {
+      display: none;
+    }
+  }
+
+
+
+
+
+
+
+/* ARTWORK TRENDING Slider FULL WIDTH  */
+  .atn-slider-full-width  {
+    /* border: 2px solid red; */
+    padding-left: 0;
+    padding-right: 0;
+  }
