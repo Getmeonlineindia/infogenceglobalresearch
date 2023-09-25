@@ -172,7 +172,7 @@ a {
 
 /* STYLING OF SEARCH BAR STARTS HERE */
 .input-search-box {
-    /* border: 3px solid red; */
+    border: 1px solid #000;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -183,13 +183,16 @@ a {
   }
   #input-search {
     width: 95%;
-    font-size: 2rem;
-    /* padding: 7px; */
+    font-size: 1.7rem;
+    padding-left: 7px;
+    border: none;
+    outline: none;
   }
   .search-icon-div {
     background-color: #061993;
-    /* width: 10%; */
-    padding: 8px;
+    width: 10%;
+    height: 100%;
+    padding: 12px;
     color: white;
     display: flex;
     align-items: center;
@@ -301,6 +304,9 @@ a {
     max-width: 1920px;
     margin: 0 auto;
     overflow: hidden;
+    /* border: 2px solid blue; */
+    height: 500px;
+    
 }
 .slider-container {
     display: flex;
@@ -317,8 +323,8 @@ a {
 .prev-btn,
 .next-btn {
     position: absolute;
-    /* top: 50%; */
-    top: 35%;
+    top: 50%;
+    /* top: 35%; */
     transform: translateY(-50%);
     /* padding: 8px 16px; */
     /* font-size: 12px; */
@@ -356,7 +362,8 @@ a {
 .process-section {
     /* border: 3px solid red; */
     font-family: inter;
-    padding-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .process-section-heading {
     text-align: center;
@@ -678,7 +685,7 @@ a {
 .top-market-reports {
     font-family: inter;
     /* border: 5px solid red; */
-    padding: 15px 20px;
+    padding: 50px 20px;
 }
 .top-market-reports-heading {
     text-align: center;
@@ -696,7 +703,8 @@ a {
     text-align: center;
 }
 .top-market-reports-cards-section .cards .image-section img {
-    width: 90%;
+    width: 100%;
+    height: 400px;
 }
 
 .top-market-reports-cards-section .know-more-links {
@@ -707,7 +715,7 @@ a {
 .top-market-reports-cards-section .cards .text-section {
    font-weight: 600;
    /* border: 2px solid red; */
-   padding: 0 10px;
+   padding: 10px;
 }
 @media only screen and (max-width: 480px) {
     .top-market-reports-cards-section {
