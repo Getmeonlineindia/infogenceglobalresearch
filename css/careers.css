@@ -1,12 +1,8 @@
-* {
-    font-family: inter;
-    box-sizing: border-box;
-    max-width: 1920px;
-}
+
 .careers-section-banner {
     width: 100%;
-    border: 5px solid tomato;
-    position: relative;
+    border: 5px solid blue;
+    /* position: relative; */
 }
 #carrer-section-banner-image img {
     width: 100%;
