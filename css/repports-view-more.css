@@ -5,6 +5,13 @@
     font-family: inter;
 }
 
+.stn-max-width {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 3px solid blue; */
+}
+
 
 .view-more-card {
     display: grid;

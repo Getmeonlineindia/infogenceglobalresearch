@@ -10,7 +10,7 @@
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 .hidden {
     display: none;
@@ -19,6 +19,9 @@
 a {
     cursor: pointer;
     text-decoration: none;
+}
+input, select, textarea {
+    outline: none;
 }
 
 /* STYLING OF MAIN HEADER STARTS HERE */
