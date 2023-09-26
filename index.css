@@ -24,6 +24,8 @@ input, select, textarea {
     outline: none;
 }
 
+
+
 /* STYLING OF MAIN HEADER STARTS HERE */
 #parent-of-header-and-hamburger-section {
     position: sticky;
@@ -124,7 +126,7 @@ input, select, textarea {
         font-size: 0.7rem;
     }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     .main-header {
         /* border: 2px solid green; */
         grid-template-columns: 50% 35% 15%;
@@ -314,7 +316,7 @@ input, select, textarea {
     margin: 0 auto;
     overflow: hidden;
     /* border: 2px solid blue; */
-    height: 500px;
+    height: 400px;
     
 }
 .slider-container {
@@ -354,6 +356,14 @@ input, select, textarea {
     height: 37px;
 }
 
+@media only screen and (max-width: 1200px) {
+    .banner-slider {
+        height: max-content;
+    }
+    .banner-slider img {
+        height: max-content;
+    }
+}
 @media only screen and (max-width: 500px) {
     .prev-btn img, .next-btn img {
         width: 30px;
