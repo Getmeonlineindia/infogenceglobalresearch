@@ -6,12 +6,19 @@
     box-sizing: border-box;
     font-family: inter;
 }
-.stn-max-width {
+.stn-max-width-head-foot {
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
-    /* border: 3px solid blue; */
+    border: 3px solid red;
 }
+.stn-max-width {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid blue;
+}
+
 .hidden {
     display: none;
 }
@@ -312,7 +319,7 @@ input, select, textarea {
 .banner-slider {
     position: relative;
     width: 100%;
-    max-width: 1920px;
+    /* max-width: 1920px; */
     margin: 0 auto;
     overflow: hidden;
     /* border: 2px solid blue; */
@@ -321,7 +328,7 @@ input, select, textarea {
 }
 .slider-container {
     display: flex;
-    transition: transform 0.7s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 .slide {
     flex: 0 0 100%;
@@ -335,10 +342,7 @@ input, select, textarea {
 .next-btn {
     position: absolute;
     top: 50%;
-    /* top: 35%; */
     transform: translateY(-50%);
-    /* padding: 8px 16px; */
-    /* font-size: 12px; */
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
