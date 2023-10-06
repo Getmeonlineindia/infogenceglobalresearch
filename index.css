@@ -567,20 +567,20 @@ input, select, textarea {
     color: #013878;
     text-align: center;
     padding: 0 0 20px 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .two-reports-section-left-one ul {
-    /* border: 2px solid red; */
-    padding: 0 0 0 50px;
+    border: 2px solid red;
+    padding: 0 0 0 30px;
     text-align: justify;
-    font-size: 1.4rem;
+    font-size: 0.9rem;
     line-height: 1.3;
     height: 45%;
 }
 .two-reports-section-left-one p {
-    /* border: 3px solid blue; */
+    border: 3px solid blue;
     padding: 20px;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     text-align: center;
     /* letter-spacing: 1.5; */
     height: max-content;
@@ -603,7 +603,23 @@ input, select, textarea {
         grid-template-columns: 100%;
         gap: 15px;
     }
-
+    .two-reports-section-left-one ul {
+        height: auto;
+    }
+    .two-reports-section-left-one {
+        border: 2px solid red;
+        height: 90%;
+        padding: 20px 10px;
+    }
+    .two-reports-section-left-one a button {
+        border: 2px solid red;
+        margin-bottom: 80px;
+    }
+}
+@media only screen and (max-width: 599px) {
+    .two-reports-section {
+        padding: 40px 10px;
+    }
 }
 /* ************************************************************** */
 
@@ -729,13 +745,18 @@ input, select, textarea {
 .colorful-box-section-right-section-client-visitor .box h1 {
     font-size: 2rem;
 }
-@media only screen and (max-width: 601px) {
+@media only screen and (max-width: 767px) {
     .colorful-box-section {
         grid-template-columns: 100%;
+        padding: 20px;
     }
     .colorful-box-section-right-section-para {
-        /* border: 1px solid white; */
+        border: 1px solid white;
         padding: 0 0 20px 0;
+        font-size: 0.9rem;
+    }
+    .colorful-box-section-left-section h1 {
+        font-size: 2rem;
     }
 }
 /* ************************************************************** */
@@ -762,15 +783,18 @@ input, select, textarea {
 .top-market-reports-cards-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    /* border: 2px solid red; */
+    column-gap: 20px;
+    row-gap: 40px;
+    border: 2px solid red;
+    place-items: center;
 }
 .top-market-reports-cards-section .cards {
-    /* border: 2px solid red; */
+    border: 2px solid blue;
     text-align: center;
+    width: 310px;
 }
 .top-market-reports-cards-section .cards .image-section {
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     height: 300px;
     width: 300px;
     margin-left: auto;
@@ -783,7 +807,7 @@ input, select, textarea {
 .top-market-reports-cards-section .know-more-links {
     /* border: 2px solid red; */
     text-align: left;
-    padding: 10px;
+    /* padding: 10px; */
     text-decoration: none;
 }
 .top-market-reports-cards-section .know-more-links a {
@@ -792,28 +816,54 @@ input, select, textarea {
 }
 .top-market-reports-cards-section .cards .text-section {
    font-weight: 600;
-   /* border: 2px solid red; */
-   padding: 10px;
+   border: 2px solid red;
+   padding: 5px 0;
 }
 
 
-.top-market-reports-cards-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 70px;
-    /* border: 2px solid red; */
-}
-@media only screen and (max-width: 1200px) {
+
+@media only screen and (max-width: 1024px) {
     .top-market-reports-cards-section {
-        gap: 20px;
-        /* border: 2px solid red; */
+        column-gap: 15px;
     }
-    .top-market-reports-cards-section .cards .image-section img {
-        width: 100%;
-        height: 300px;
+    .top-market-reports-cards-section .cards {
+        text-align: center;
+        width: 250px;
+    }
+    .top-market-reports-cards-section .cards .image-section {
+        height: 240px;
+        width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .top-market-reports-cards-section {
+        column-gap: 10px;
+    }
+    .top-market-reports-cards-section .cards {
+        width: 230px;
+    }
+    .top-market-reports-cards-section .cards .image-section {
+        height: 220px;
+        width: 220px;
     }
 }
 @media only screen and (max-width: 767px) {
+    .top-market-reports-cards-section {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+    .top-market-reports-cards-section .cards {
+        width: 230px;
+    }
+    .top-market-reports-cards-section .cards .image-section {
+        height: 220px;
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .top-market-reports-cards-section {
         width: 70%;
         grid-template-columns: 1fr;
