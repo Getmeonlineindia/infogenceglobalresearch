@@ -409,8 +409,8 @@ input, select, textarea {
     justify-content: space-evenly;
     flex-wrap: wrap;
     row-gap: 100px;
-    column-gap: 50px;
-    padding: 40px;
+    column-gap: 25px;
+    padding: 40px 0;
     border: 2px solid red;
 }
 .process-section-cards-card-1 {
@@ -420,7 +420,7 @@ input, select, textarea {
     border-radius: 15px;
     position: relative;
     height: 400px;
-    width: 25%;
+    width: 28%;
     justify-self: center;
     /* border: 2px solid red; */
 }
@@ -442,12 +442,16 @@ input, select, textarea {
 
 .process-section-cards-card-1-text-box {
     /* border: 1px solid red; */
-    padding: 0 5px;
+    padding: 0 7px;
     position: absolute;
-    top: 45%;
+    top: 42%;
 }
 .process-section-cards-card-1-heading {
-    padding: 10px;
+    padding: 7px;
+}
+.process-section-cards-card-1-para {
+    font-size: 0.9rem;
+    /* border: 2px solid red; */
 }
 
 
@@ -456,12 +460,18 @@ input, select, textarea {
 @media only screen and (max-width: 991px) {
     .process-section-cards-card-1 {
         height: 400px;
-        width: 35%;
+        width: 42%;
         /* border: 2px solid red; */
     }
     .process-section-cards {
         column-gap: 25px;
         row-gap: 70px;
+    }
+    .process-section-cards-card-1-heading {
+        font-size: 1.2rem;
+    }
+    .process-section-cards-card-1-para {
+        font-size: 1rem;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -473,19 +483,19 @@ input, select, textarea {
     .process-section-cards {
         column-gap: 25px;
     }
-    .process-section-cards-card-1-heading {
-        font-size: 1.3rem;
-    }
-    .process-section-cards-card-1-para {
-        font-size: 1rem;
-    }
     .process-section-para {
         width: 90%;
     }
+    .process-section-cards-card-1-heading {
+        font-size: 1.1rem;
+    }
+    .process-section-cards-card-1-para {
+        font-size: 0.9rem;
+    }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
     .process-section-cards-card-1 {
-        width: 47%;
+        width: 48%;
         /* border: 2px solid red; */
     }
 }
@@ -503,7 +513,7 @@ input, select, textarea {
 }
 @media only screen and (max-width: 375px) {
     .process-section-cards-card-1 {
-        width: 100%;
+        width: 90%;
         /* border: 2px solid red; */
     } 
 }
