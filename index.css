@@ -10,13 +10,13 @@
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 .stn-max-width {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 
 .hidden {
@@ -30,7 +30,9 @@ a {
 input, select, textarea {
     outline: none;
 }
-
+button  {
+    cursor: pointer;
+}
 
 
 /* STYLING OF MAIN HEADER STARTS HERE */
@@ -163,6 +165,9 @@ input, select, textarea {
         top: 58px; 
         width: 100%;
         padding-right: 20px;
+        /* background-color: red; */
+
+        top: 45px;
     }
     .main-header-nav-bar-box li {
         color: white;
@@ -177,11 +182,24 @@ input, select, textarea {
         top: 16px;
         right: 15px;
         display: block;
+
+        top: 4px;
     }
     .main-header-nav-bar-box li a {
         color: white;
     }
 }
+
+@media only screen and (max-width: 375px) { 
+    .mobile-menu {
+        top: 0px;
+    }
+
+    .main-header-nav-bar-box {
+        top: 32px;
+    }
+}
+
 
 
 
@@ -200,8 +218,8 @@ input, select, textarea {
     margin: 30px auto;
   }
   #input-search {
-    width: 95%;
-    font-size: 1.7rem;
+    width: 100%;
+    font-size: 1.3rem;
     padding-left: 7px;
     border: none;
     outline: none;
@@ -210,7 +228,7 @@ input, select, textarea {
     background-color: #061993;
     width: 10%;
     height: 100%;
-    padding: 12px;
+    padding: 7px;
     color: white;
     display: flex;
     align-items: center;
@@ -219,7 +237,7 @@ input, select, textarea {
     margin-left: 10px;
   }
   .search-icon-div i{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   @media only screen and (max-width:480px) {
     .input-search-box {
@@ -227,10 +245,10 @@ input, select, textarea {
     }
     #input-search {
         /* border: 1px solid red; */
-        width: 80%;
+        width: 90%;
     }
     .search-icon-div {
-        width: 20%;
+        width: 10%;
     }
   }
 
@@ -301,11 +319,17 @@ input, select, textarea {
         font-size: 0.8rem;
         cursor: pointer;
     }
+    .know-more {
+        padding: 20px;
+    }
 }
 @media only screen and (max-width: 480px) {
     .know-more {
         grid-template-columns: 100%;
 
+    }
+    .know-more {
+        padding: 40px 20px;
     }
 }
 
@@ -397,7 +421,7 @@ input, select, textarea {
     text-align: center;
     width: 70%;
     margin: auto;
-    padding: 5px;
+    padding: 15px;
     /* border: 1px solid red; */
 }
 .process-section-cards {
@@ -411,7 +435,7 @@ input, select, textarea {
     row-gap: 100px;
     column-gap: 25px;
     padding: 40px 0;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .process-section-cards-card-1 {
     border: 1px solid rgb(226, 220, 220);
@@ -451,7 +475,8 @@ input, select, textarea {
 }
 .process-section-cards-card-1-para {
     font-size: 0.9rem;
-    /* border: 2px solid red; */
+    text-align: justify;
+    /* padding-bottom: 10px; */
 }
 
 
@@ -570,15 +595,16 @@ input, select, textarea {
     font-size: 1.5rem;
 }
 .two-reports-section-left-one ul {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 0 0 0 30px;
     text-align: justify;
     font-size: 0.9rem;
     line-height: 1.3;
     height: 45%;
+    overflow-y: hidden;
 }
 .two-reports-section-left-one p {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     padding: 20px;
     font-size: 0.9rem;
     text-align: center;
@@ -602,23 +628,25 @@ input, select, textarea {
     .two-reports-section {
         grid-template-columns: 100%;
         gap: 15px;
+        padding-bottom: 0px;
     }
     .two-reports-section-left-one ul {
         height: auto;
     }
     .two-reports-section-left-one {
-        border: 2px solid red;
-        height: 90%;
+        /* border: 2px solid red; */
+        height: 93%;
         padding: 20px 10px;
     }
     .two-reports-section-left-one a button {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         margin-bottom: 80px;
     }
 }
 @media only screen and (max-width: 599px) {
     .two-reports-section {
-        padding: 40px 10px;
+        padding: 40px 15px;
+        padding-bottom: 0;
     }
 }
 /* ************************************************************** */
@@ -631,8 +659,10 @@ input, select, textarea {
 /* STYLING OF CATEGORIES STARTS HERE  */
 .categories-section {
     /* border: 5px solid red; */
-    padding: 50px 35px;
+    padding: 0px 0 50px 0;
+
     font-family: inter;
+    border: 2px solid red;
 }
 .categories-section-heading {
     text-align: center;
@@ -661,8 +691,8 @@ input, select, textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 150px;
-    width: 200x;
+    height: 120px;
+    width: 150px;
     /* padding: 10px; */
 }
 .categories-section-image-section-cards img {
@@ -748,12 +778,13 @@ input, select, textarea {
 @media only screen and (max-width: 767px) {
     .colorful-box-section {
         grid-template-columns: 100%;
-        padding: 20px;
+        padding: 20px 10px;
     }
     .colorful-box-section-right-section-para {
-        border: 1px solid white;
+        /* border: 1px solid white; */
         padding: 0 0 20px 0;
         font-size: 0.9rem;
+        text-align: justify;
     }
     .colorful-box-section-left-section h1 {
         font-size: 2rem;
@@ -785,16 +816,16 @@ input, select, textarea {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 40px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     place-items: center;
 }
 .top-market-reports-cards-section .cards {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     text-align: center;
     width: 310px;
 }
 .top-market-reports-cards-section .cards .image-section {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 300px;
     width: 300px;
     margin-left: auto;
@@ -812,12 +843,18 @@ input, select, textarea {
 }
 .top-market-reports-cards-section .know-more-links a {
     text-decoration: none;
-    color: #000;
+    color: #fe8453;
+    font-size: 15px;
+    padding: 0 5px;
+    cursor: pointer;
+    text-decoration: underline;
 }
 .top-market-reports-cards-section .cards .text-section {
    font-weight: 600;
-   border: 2px solid red;
-   padding: 5px 0;
+   /* border: 2px solid red; */
+   padding: 5px;
+   font-size: 15px;
+   text-align: justify;
 }
 
 
@@ -861,38 +898,38 @@ input, select, textarea {
         height: 220px;
         width: 220px;
     }
+    .top-market-reports-cards-section .cards .text-section {
+        font-size: 13px;
+     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
     .top-market-reports-cards-section {
-        width: 70%;
         grid-template-columns: 1fr;
-        gap: 20px;
-        margin-left: 50%;
-        transform: translate(-50%);
     }
-    
-    .top-market-reports-cards-section .cards .image-section img {
-        width: 100%;
-        height: 300px;
+    .top-market-reports {
+        padding: 30px 10px;
+    }
+    .top-market-reports-cards-section .cards {
+        width: 360px;
+    }
+    .top-market-reports-cards-section .cards .image-section {
+        height: 350px;
+        width: 350px;
     }
     
 }
-@media only screen and (max-width: 500px) {
-    .top-market-reports-cards-section {
-        width: 100%;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin-left: 50%;
-        transform: translate(-50%);
+@media only screen and (max-width: 400px) {
+    .top-market-reports-cards-section .cards {
+        width: 250px;
     }
-    
-    .top-market-reports-cards-section .cards .image-section img {
-        width: 100%;
-        height: 250px;
+    .top-market-reports-cards-section .cards .image-section {
+        height: 240px;
+        width: 240px;
     }
-    
 }
+
+
 
 /* ************************************************************** */
 
