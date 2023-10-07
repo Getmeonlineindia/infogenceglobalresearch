@@ -1,26 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans&family=Poppins:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans&family=Poppins:wght@300;400;500;600;700&display=swap'); */
 
 
 .view-more-card {
     display: grid;
     grid-template-columns: 3fr 7fr;
     place-items: center;
-    /* border: 1px solid red; */
     padding: 40px;
     gap: 50px;
 }
-.view-more-card-text-wrapper {
-    .view-more-card-text-heading {
-        font-size: 2rem;
-        text-align: justify;
-        /* border: 2px solid red; */
-    }
-    .view-more-card-text-para {
-        font-size: 1.5rem;
-        font-weight: 500;
-    }
+.view-more-card-image-wrapper {
+    height: 400px;
+    width: 300px;
 }
-
+.view-more-card-image-wrapper img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.view-more-card-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.view-more-card-text-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: justify;
+}
+.view-more-card-text-para {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+}
 
 
 
@@ -295,7 +306,7 @@
 
 
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 840px) {
     .view-more-card {
         display: grid;
         grid-template-columns: 1fr;
@@ -348,5 +359,25 @@
 @media only screen and (max-width: 550px) { 
     .main-content-right-box-content-1-price-box-checkmark {
         width: 90% !important;
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 400px) {
+    .view-more-card {
+        padding: 10px;
+    }
+    .view-more-card-text-heading {
+        font-size: 1.2rem !important;
+        text-align: justify;
+    }
+    .view-more-card-text-para {
+        font-size: .9rem !important;
     }
 }
