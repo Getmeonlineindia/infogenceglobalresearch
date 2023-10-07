@@ -49,6 +49,12 @@ button  {
 
 
 
+
+
+
+
+
+
 /* STYLING OF MAIN HEADER STARTS HERE */
 #parent-of-header-and-hamburger-section {
     position: sticky;
@@ -65,6 +71,7 @@ button  {
     /* position: sticky;
     top: 0;
     z-index: 1; */
+
 }
 .main-header-logo-box {
     /* border: 1px solid red; */
@@ -225,6 +232,40 @@ button  {
         top: 40px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************************************* */
+/* MAJOR CHANGES IN HEADER BY CLIENT SAGAR*/
+.main-header {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.main-header-logo-box {
+    width: 50%;
+    /* border: 2px solid red; */
+    margin-left: 20%;
+}
+.main-header-nav-bar-box {
+    /* border: 2px solid red; */
+    padding-right: 0;
+}
+/* ************************************************************************* */
+
+
+
+
+
 
 
 
