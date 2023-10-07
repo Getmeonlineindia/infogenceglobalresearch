@@ -33,6 +33,13 @@ input, select, textarea {
 button  {
     cursor: pointer;
 }
+.active  {
+    background-color: #fe8453;
+    padding: 7px 15px;
+    border-radius: 20px;
+}
+
+
 
 
 /* STYLING OF MAIN HEADER STARTS HERE */
