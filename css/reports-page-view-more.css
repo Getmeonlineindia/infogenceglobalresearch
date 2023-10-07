@@ -79,6 +79,9 @@
 .main-content-left-side-box {
     /* border: 2px solid red; */
     height: max-content;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .main-content-right-side-box {
     border: 2px solid green;
@@ -122,6 +125,10 @@
 
 
 /* STYLINNG OF MAIN CONTENT LEFT SIDE BOX:- DEFAULT CONTENT */
+.wrapper-main-content-left-side-box-table-of-contents {
+    padding-top: 25px;
+}
+
 .main-content-left-side-box-default-content-1 {
     /* border: 1px solid black; */
     padding: 10px 0;
@@ -191,7 +198,11 @@
 
 
 
-
+.wrapper-main-content-left-side-box-requests-description > p, .wrapper-main-content-left-side-box-methodology > p {
+    padding-top: 25px;
+    font-size: 15px;
+    line-height: 1.3;
+}
 
 
 
