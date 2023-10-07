@@ -37,6 +37,13 @@ button  {
     background-color: #fe8453;
     padding: 7px 15px;
     border-radius: 20px;
+    font-weight: 700;
+}
+.active a {
+    background-color: #fe8453;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-weight: 600;
 }
 
 

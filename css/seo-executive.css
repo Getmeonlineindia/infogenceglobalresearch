@@ -10,7 +10,6 @@
     padding: 20px 40px;
 }
 
-
 a {
     cursor: pointer;
 }
@@ -41,6 +40,7 @@ a {
     display: flex;
     /* border: 1px solid red; */
     gap: 7px;
+    cursor: pointer;
 }
 .job-details {
     /* border: 1px solid red; */

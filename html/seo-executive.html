@@ -17,34 +17,34 @@
     <script src="../js/mobile-menu-hamburger-icon.js" defer></script>
 </head>
 <body>
-
-    <!-- Header Section -->
-    <div id="parent-of-header-and-hamburger-section" class="stn-max-width">
-        <header class="main-header">        
-            <div class="main-header-logo-box">
-            <img class="final-1-icon" alt="" src="../images/final-1@2x.png" />
-            </div>
-            
-            <ul class="main-header-nav-bar-box hidden" id="menu-list">
+    <!-- HEADER Section -->
+    <section id="parent-of-header-and-hamburger-section" class="stn-max-width-head-foot">
+        <header class="main-header">
+          <div class="main-header-logo-box">
+            <a href="/"><img class="final-1-icon" alt="" src="../images/logo-ravie.png" /></a>
+          </div>
+  
+          <ul class="main-header-nav-bar-box hidden" id="menu-list">
             <li id="home"><a href="../index.html">HOME</a></li>
             <li id="about-us"><a href="../html/abous-us.html">ABOUT US</a></li>
             <li id="reports"><a href="../html/reports.html">REPORTS</a></li>
-            <li id="consulting"><a href="./html/abous-us.html">CONSULTING</a></li>
+            <!-- <li id="consulting"><a href="../html/abous-us.html">CONSULTING</a></li> -->
             <li id="insights"><a href="../html/insights.html">INSIGHTS</a></li>
-            <li id="careers"><a href="../html/careers.html">CAREERS</a></li>
-            <li id="contact-us"><a href="../html/contact-us.html">CONTACT US</a></li>
-            </ul>
-
-            <div id="login-wrapper">
+            <li id="careers" class="nav-menu active"><a href="../html/careers.html">CAREERS</a></li>
+            <li id="contact-us">
+              <a href="../html/contact-us.html">CONTACT US</a>
+            </li>
+          </ul>
+  
+          <div id="login-wrapper">
             <button id="login-btn">LOGIN</button>
-            </div>
+          </div>
         </header>
-
+  
         <section class="mobile-menu hidden" onclick="togglemenu()">
-            <img src="../images/menu.png.png" alt="" style="width: 30px;">
+          <img src="../images/menu.png.png" alt="" style="width: 30px" />
         </section>
-
-    </div>
+    </section>
 
 
     <div id="view-more-001" class="stn-max-width">
@@ -79,67 +79,75 @@
 
 
     <!-- FOOTER SECTION-->
-    <footer class="main-footer stn-max-width">
-        <div class=""foot-col-1>
-            <div class="foot-col-1-row-1-img">
-                <a href= "/">
-                    <img src="../images/final-1@2x.png" alt="">
-                </a>
-            </div>
-            <p class="foot-col-1-row-1-p">We know how important customer experience is for a business, and therefore, we strive.</p>
-            <div class="foot-col-1-row-1-icons">
-                <a href=""><img src="../images/Group 28.png" alt=""></a>
-                <!-- <a href=""><img src="../images/Group 29.png" alt=""></a> -->
-                <a href=""><img src="../images/Group 30.png" alt=""></a>
-                <!-- <a href=""><img src="../images/Group 84.png" alt=""></a> -->
-            </div>
+    <footer class="main-footer stn-max-width-head-foot">
+        <div class="" foot-col-1>
+          <div class="foot-col-1-row-1-img">
+            <a href="/">
+              <a href="/"><img class="final-1-icon" alt="" src="../images/logo-ravie.png" /></a>
+            </a>
+          </div>
+          <p class="foot-col-1-row-1-p">
+            We know how important customer experience is for a business, and
+            therefore, we strive.
+          </p>
+          <div class="foot-col-1-row-1-icons">
+            <a href=""><img src="../images/Group 28.png" alt="" /></a>
+            <!-- <a href=""><img src="../images/Group 29.png" alt=""></a> -->
+            <a href=""><img src="../images/Group 30.png" alt="" /></a>
+            <!-- <a href=""><img src="../images/Group 84.png" alt=""></a> -->
+          </div>
         </div>
         <div id="parent-foot-col-234">
-            <div class="foot-col-2">
-                <h3>Company</h3>
-                <a href=""><p>About us</p></a>
-                <a href=""><p>Insights</p></a>
-                <a href=""><p>Carrer</p></a>
+          <div class="foot-col-2">
+            <h3>Company</h3>
+            <a href=""><p>About us</p></a>
+            <a href=""><p>Insights</p></a>
+            <a href=""><p>Carrer</p></a>
+          </div>
+          <div class="foot-col-3">
+            <h3>Quick Links</h3>
+            <a href=""><p>Terms and Condition</p></a>
+            <a href=""><p>GDPR Policy</p></a>
+            <a href=""><p>Carrer</p></a>
+            <a href=""><p>FAQs</p></a>
+            <a href=""><p>Sitemap</p></a>
+          </div>
+          <div class="foot-col-4">
+            <h3>Contact</h3>
+            <div class="foot-col-4-add-part">
+              <div class="home-icon">
+                <img src="../images/Vector (2).png" alt="" />
+                <p>
+                  420, Nyati Eureka, Near Manpal Hospital, Kharadi, Pune-14, India
+                </p>
+              </div>
+              <div class="phone-icon">
+                <img src="../images/Vector (3).png" alt="" />
+                <a href="">
+                  <p><strong>+91 93564 39799</strong></p></a
+                >
+              </div>
+              <div class="mail-icon">
+                <img src="../images/Vector (4).png" alt="" />
+                <a href=""
+                  ><p id="foot-col-4-add-part-email">
+                    <strong>contact@infogenceglobalresearch.com</strong>
+                  </p></a
+                >
+              </div>
             </div>
-            <div class="foot-col-3">
-                <h3>Quick Links</h3>
-                <a href=""><p>Terms and Condition</p></a>
-                <a href=""><p>GDPR Policy</p></a>
-                <a href=""><p>Carrer</p></a>
-                <a href=""><p>FAQs</p></a>
-                <a href=""><p>Sitemap</p></a>
+            <div class="foot-col-4-payment-icons">
+              <span><img src="../images/Group 75.png" alt="" /></span>
+              <span><img src="../images/Vector.png" alt="" /></span>
+              <span><img src="../images/Vector (1).png" alt="" /></span>
+              <span><img src="../images/Group 76.png" alt="" /></span>
+              <span><img src="../images/image 28.png" alt="" /></span>
             </div>
-            <div class="foot-col-4">
-                <h3>Contact</h3>
-                <div class="foot-col-4-add-part">
-                    <div class="home-icon">
-                        <img src="../images/Vector (2).png" alt="">
-                        <p>420, Nyati Eureka, Near Manpal Hospital, Kharadi, Pune-14, India</p>
-                    </div>
-                    <div class="phone-icon">
-                        <img src="../images/Vector (3).png" alt="">
-                        <a href=""> <p><strong>+91 93564 39799</strong></p></a>
-                    
-                    </div>
-                    <div class="mail-icon">
-                        <img src="../images/Vector (4).png" alt="">
-                        <a href=""><p id="foot-col-4-add-part-email"><strong>contact@infogenceglobalresearch.com</strong></p></a>
-                    </div>
-                </div>
-                <div class="foot-col-4-payment-icons">
-                    <span><img src="../images/Group 75.png" alt=""></span>
-                    <span><img src="../images/Vector.png" alt=""></span>
-                    <span><img src="../images/Vector (1).png" alt=""></span>
-                    <span><img src="../images/Group 76.png" alt=""></span>
-                    <span><img src="../images/image 28.png" alt=""></span>
-                </div>
-            </div>
+          </div>
         </div>
-        
     </footer>
-    <footer class="footer-bottom stn-max-width">
-        <p>@2023 Infogence Global Research. All rights reserved. </p>
+    <footer class="footer-bottom stn-max-width-head-foot">
+        <p>@2023 Infogence Global Research. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
