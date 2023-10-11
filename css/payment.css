@@ -91,6 +91,10 @@
     /* border: 5px solid red; */
     cursor: pointer;
 }
+.captcha-refresh-btn {
+    border: none;
+    background-color: white;
+}
 
 
 
