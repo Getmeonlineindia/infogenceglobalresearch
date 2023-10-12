@@ -83,7 +83,7 @@
 .main-content-left-side-box {
     /* border: 2px solid red; */
     height: max-content;
-    width: 75%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -142,7 +142,7 @@
     }
     .main-content-left-side-box-default-content-1-para {
         /* background-color: aqua; */
-        text-align: justify;
+        /* text-align: justify; */
         font-size: 15px;
     }
     .main-content-left-side-box-default-content-1-lists {
@@ -189,12 +189,12 @@
         padding: 5px 0 5px 20px;
     }
 }
-.wrapper-main-content-left-side-box-requests-description {
+/* .wrapper-main-content-left-side-box-requests-description {
     text-align: justify;
-}
-.wrapper-main-content-left-side-box-methodology {
+} */
+/* .wrapper-main-content-left-side-box-methodology {
     text-align: justify;
-}
+} */
 
 .table-of-contents-odered-lists-nested-1 {
     padding-left: 40px;
